@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories</title>
+  <link rel="stylesheet" href="../Css/form.css">
+  <link rel="stylesheet" href="../Css/body.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">Home</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="categoryDropdown">
+              <li><a class="dropdown-item" href="category.html?type=short">Short Story</a></li>
+              <li><a class="dropdown-item" href="category.html?type=long">Long Story</a></li>
+              <li><a class="dropdown-item" href="category.html?type=novel">Novel</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="category.html?type=manga">Manga</a></li>
+              <li><a class="dropdown-item" href="category.html?type=light-novel">Light Novel</a></li>
+              <li><a class="dropdown-item" href="category.html?type=web-novel">Web Novel</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="practice.html">Practice</a>
+          </li>
+        </ul>
+
+        <div class="d-flex gap-2 ms-auto align-items-center">
+          <button class="btn btn-outline-light btn-sm" id="theme-btn">
+            <i class="bi bi-moon-fill"></i>
+          </button>
+
+          <div id="auth-btns" class="d-flex gap-2">
+            <a class="btn btn-outline-primary" href="login.html">Login</a>
+            <a class="btn btn-primary" href="register.html">Register</a>
+          </div>
+
+          <div id="user-menu" style="display: none; align-items: center; gap: 10px;">
+            <span id="username" class="text-light fw-semibold"></span>
+            <button class="btn btn-outline-danger btn-sm" id="logout-btn">Logout</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h1 class="mb-5">Categories</h1>
+    
+    <div class="stories-grid">
+      <div class="story-card">
+        <div class="story-image">
+          <img src="https://via.placeholder.com/250x350?text=The+Black+Cat" alt="The Black Cat">
+          <div class="story-badge">Novel</div>
+        </div>
+        <div class="story-content">
+          <h3 class="story-title">The Black Cat</h3>
+          <p class="story-author">by Edgar Allan Poe</p>
+          <p class="story-description">A chilling tale of obsession and guilt as a man battles his dark impulses.</p>
+          <div class="story-meta">
+            <span class="story-chapters"><i class="bi bi-book"></i> 5 chapters</span>
+            <span class="story-rating"><i class="bi bi-star-fill"></i> 4.8/5</span>
+          </div>
+          <a href="../Comic/theblackcat.html" class="btn btn-primary btn-sm w-100">Read Now</a>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <div class="story-image">
+          <img src="https://via.placeholder.com/250x350?text=The+Adventure" alt="The Adventure">
+          <div class="story-badge">Long Story</div>
+        </div>
+        <div class="story-content">
+          <h3 class="story-title">The Gift Of Magi</h3>
+          <p class="story-author">by John Smith</p>
+          <p class="story-description">An epic journey across mystical lands filled with magic and mystery.</p>
+          <div class="story-meta">
+            <span class="story-chapters"><i class="bi bi-book"></i> 12 chapters</span>
+            <span class="story-rating"><i class="bi bi-star-fill"></i> 4.6/5</span>
+          </div>
+          <a href="../Comic/thegiftofmagi.html" class="btn btn-primary btn-sm w-100">Read Now</a>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <div class="story-image">
+          <img src="https://via.placeholder.com/250x350?text=Lost+Dreams" alt="Lost Dreams">
+          <div class="story-badge">Short Story</div>
+        </div>
+        <div class="story-content">
+          <h3 class="story-title">The Last Leaf</h3>
+          <p class="story-author">by Sarah Johnson</p>
+          <p class="story-description">A poignant short story about love, loss, and finding hope again.</p>
+          <div class="story-meta">
+            <span class="story-chapters"><i class="bi bi-book"></i> 3 chapters</span>
+            <span class="story-rating"><i class="bi bi-star-fill"></i> 4.9/5</span>
+          </div>
+          <a href="../Comic/thelastleaf.html" class="btn btn-primary btn-sm w-100">Read Now</a>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <div class="story-image">
+          <img src="https://via.placeholder.com/250x350?text=Dragon+Realm" alt="Dragon Realm">
+          <div class="story-badge">Light Novel</div>
+        </div>
+        <div class="story-content">
+          <h3 class="story-title">The Little Prince</h3>
+          <p class="story-author">by Alex Chen</p>
+          <p class="story-description">A fantasy adventure where dragons rule and humans must prove their worth.</p>
+          <div class="story-meta">
+            <span class="story-chapters"><i class="bi bi-book"></i> 24 chapters</span>
+            <span class="story-rating"><i class="bi bi-star-fill"></i> 4.7/5</span>
+          </div>
+          <a href="../Comic/thelittleprince.html" class="btn btn-primary btn-sm w-100">Read Now</a>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <div class="story-image">
+          <img src="https://via.placeholder.com/250x350?text=Warriors" alt="Warriors">
+          <div class="story-badge">Manga</div>
+        </div>
+        <div class="story-content">
+          <h3 class="story-title">The Tell Tale Heart</h3>
+          <p class="story-author">by Takeshi Yamamoto</p>
+          <p class="story-description">Epic battles and incredible artwork in this action-packed manga series.</p>
+          <div class="story-meta">
+            <span class="story-chapters"><i class="bi bi-book"></i> 45 chapters</span>
+            <span class="story-rating"><i class="bi bi-star-fill"></i> 4.8/5</span>
+          </div>
+          <a href="../Comic/thetelltaleheart.html" class="btn btn-primary btn-sm w-100">Read Now</a>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <div class="story-image">
+          <img src="https://via.placeholder.com/250x350?text=Web+Novel" alt="Infinite Ascension">
+          <div class="story-badge">Web Novel</div>
+        </div>
+        <div class="story-content">
+          <h3 class="story-title">Infinite Ascension</h3>
+          <p class="story-author">by Web Author</p>
+          <p class="story-description">A cultivation web novel with endless possibilities and epic power-ups.</p>
+          <div class="story-meta">
+            <span class="story-chapters"><i class="bi bi-book"></i> 156 chapters</span>
+            <span class="story-rating"><i class="bi bi-star-fill"></i> 4.5/5</span>
+          </div>
+          <a href="../Comic/infiniteascension.html" class="btn btn-primary btn-sm w-100">Read Now</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Website</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../Java/auth.js"></script>
+  <script src="../Java/theme.js"></script>
+</body>
+</html>
